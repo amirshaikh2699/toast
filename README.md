@@ -7,14 +7,17 @@ Copy style.css and Main.js into your project/Merge into existing main.js and Sty
 # Documentation
 showToast(type,message,duration);
 
-# Type
+Type :- 
+
   Datatype : string;
   "warning"
   "error"
   "success"
   
-# Message
+Message :- 
+
   Datatype : string;
   
-# duration
+duration :- 
+
   Datatype : number;
