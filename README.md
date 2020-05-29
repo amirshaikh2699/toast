@@ -1,4 +1,4 @@
-# Toast
+# Toast 
 Toast made with Bootstrap and Vanilla JS 
 
 ## Installation
@@ -9,9 +9,9 @@ showToast(type,message,duration);
 
 ### Type
 Datatype : string;
-  "warning"
-  "error"
-  "success"
+  1. "warning"
+  2. "error"
+  3. "success"
   
 ### Message 
 Datatype : string;
