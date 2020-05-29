@@ -1,4 +1,4 @@
-# toast
+# Toast
 Toast made with Bootstrap and Vanilla JS 
 
 ## Installation
