@@ -1,0 +1,94 @@
+.toastParent {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 25rem;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.customToast {
+    background: #fff;
+    border-left: 5px solid #000;
+    border-radius: 3px;
+    box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.customToast .message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    max-height: 50px;
+    transition: 0.3s;
+}
+
+.customToast .message:hover {
+    height: fit-content;
+}
+
+.customToast .toastStat {
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+}
+
+.customToast .times {
+    font-size: 2.7rem;
+    color: #858080;
+}
+
+.customToast.warning .fa-times,
+.customToast.warning .fa-check {
+    display: none;
+}
+
+.customToast.warning {
+    border-color: var(--warning);
+}
+
+.customToast.warning .toastStat {
+    background-color: var(--warning);
+}
+
+.customToast.error .fa-check,
+.customToast.error .fa-exclamation {
+    display: none;
+}
+
+.customToast.error {
+    border-color: var(--danger);
+}
+
+.customToast.error .toastStat {
+    background-color: var(--danger);
+}
+
+.customToast.success .fa-times,
+.customToast.success .fa-exclamation {
+    display: none;
+}
+
+.customToast.success {
+    border-color: var(--success);
+}
+
+.customToast.success .toastStat {
+    background-color: var(--success);
+}
+
+@media only screen and (max-width:576px) {
+    .toastParent {
+        width: 100%;
+        left: 0%;
+    }
+}
